@@ -1,0 +1,25 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: taskflow
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/taskflow
+    username: taskflow_app
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+  flyway:
+    enabled: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug

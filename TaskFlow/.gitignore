@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Local environment / secrets — DB_PASSWORD and friends never get committed
+.env
+.env.*
+!.env.example
+
+# Editors (frontend/.vscode is intentional, from `ng new`)
+.idea/
+*.iml
+
+# Build archives
+*.zip
